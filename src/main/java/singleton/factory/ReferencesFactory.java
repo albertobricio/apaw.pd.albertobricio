@@ -1,14 +1,18 @@
-package es.upm.miw.pd.singleton.factory;
+package singleton.factory;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class ReferencesFactory {
+	
+	private static ReferencesFactory factory = new ReferencesFactory();
+	
     private Map<String, Integer> references;
 
     private int reference;
+    
 
-    public ReferencesFactory() {
+    private ReferencesFactory() {
         this.references = new HashMap<>();
         this.reference = 0;
     }
@@ -25,6 +29,11 @@ public class ReferencesFactory {
 
     public void removeReference(String key) {
         this.references.remove(key);
+    }
+    
+    public static ReferencesFactory getFactory()
+    {
+    	return factory;
     }
 
 }
