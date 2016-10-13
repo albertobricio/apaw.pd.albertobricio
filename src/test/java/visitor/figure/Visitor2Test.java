@@ -25,7 +25,7 @@ public class Visitor2Test {
 			figure.accept(visitorArea);
 		}
 		for (Figure figure : coleccion) {
-			assertEquals(2, visitorArea.visitCircle(figure));
+			assertEquals(2, visitorArea.visitCircle(figure.getFigure()));
 		}
 		
     }

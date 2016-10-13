@@ -1,6 +1,6 @@
 package calculadoraConDeshacer;
 
-public abstract class OrderOperations {
+public abstract class OrderOperations implements Order{
 	
 	protected Calculator calculator;
 	

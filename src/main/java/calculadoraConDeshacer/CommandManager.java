@@ -3,13 +3,11 @@ package calculadoraConDeshacer;
 import java.util.HashMap;
 import java.util.Map;
 
-import es.upm.miw.pd.command.calculator.solution.Comando;
-
 public class CommandManager {
-    private Map<String, Comando> comandos = new HashMap<>();
+    private Map<String, Order> comandos = new HashMap<>();
 
-    public void add(Comando comando) {
-        this.comandos.put(comando.name(), comando);
+    public void add(Order order) {
+        this.comandos.put(order.name(), order);
     }
 
     public void execute(String key) {

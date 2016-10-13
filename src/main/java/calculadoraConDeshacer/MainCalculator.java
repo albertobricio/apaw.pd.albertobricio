@@ -1,21 +1,15 @@
 package calculadoraConDeshacer;
 
-import es.upm.miw.pd.command.calculator.solution.PrintCommand;
-import es.upm.miw.pd.command.calculator.solution.ResetCommand;
-import es.upm.miw.pd.command.calculator.solution.SubtractCommand;
-import es.upm.miw.pd.command.calculator.solution.AddCommand;
-import upm.jbb.IO;
-
 public class MainCalculator {
     private CommandManager commandManager;
 
     public MainCalculator() {
         Calculator calculator = new Calculator();
         this.commandManager = new CommandManager();
-        this.commandManager.add(new AddCommand(calculator));
-        this.commandManager.add(new SubtractCommand(calculator));
-        this.commandManager.add(new ResetCommand(calculator));
-        this.commandManager.add(new PrintCommand(calculator));
+        this.commandManager.add(new AddOrder(calculator));
+        this.commandManager.add(new SubstractOrder(calculator));
+        this.commandManager.add(new ResetOrder(calculator));
+        this.commandManager.add(new GetTotalOrder(calculator));
     }
 
     public void execute() {

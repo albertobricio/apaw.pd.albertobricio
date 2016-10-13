@@ -1,8 +1,8 @@
 package calculadoraConDeshacer;
 
-public class SubstractOrder extends OrderOperations{
+public class GetTotalOrder extends OrderOperations{
 
-	public SubstractOrder(Calculator calculator) {
+	public GetTotalOrder(Calculator calculator) {
 		super(calculator);
 	}
 
