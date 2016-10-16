@@ -9,12 +9,9 @@ public class Circle extends Figure {
         this.radius = radius;
     }
 
-    public double area() {
-        return Math.PI * radius * radius;
-    }
-
-    public double numberOfSides() {
-        return Double.POSITIVE_INFINITY;
+    public double getRadius()
+    {
+	    return this.radius;
     }
 
 	@Override

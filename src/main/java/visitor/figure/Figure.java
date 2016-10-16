@@ -10,5 +10,10 @@ public abstract class Figure {
 	{
 		this.description=description;
 	}
+	
+	protected String getDescription()
+    {
+    	return this.description;
+    }
 
 }

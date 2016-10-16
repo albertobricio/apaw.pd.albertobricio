@@ -9,16 +9,9 @@ public class Square extends Figure {
         this.side = side;
     }
 
-    public double area() {
-        return side * side;
-    }
-
-    public double numberOfSides() {
-        return 4;
-    }
-
-    public String toString() {
-        return super.toString();
+    public double getSide()
+    {
+    	return this.side;
     }
 
 	@Override

@@ -11,16 +11,14 @@ public class Triangle extends Figure {
         this.height = height;
     }
 
-    public double area() {
-        return base * height * 0.5;
+    public double getBase()
+    {
+    	return this.base;
     }
-
-    public double numberOfSides() {
-        return 3;
-    }
-
-    public String toString() {
-        return super.toString();
+    
+    public double getHeight()
+    {
+    	return this.height;
     }
 
 	@Override
