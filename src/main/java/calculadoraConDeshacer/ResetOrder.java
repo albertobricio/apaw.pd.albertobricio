@@ -8,14 +8,13 @@ public class ResetOrder extends OrderOperations{
 
 	@Override
 	public String name() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Reset";
 	}
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-		
+		this.calculator.reset();
+		System.out.println("Reset done.");
 	}
 
 

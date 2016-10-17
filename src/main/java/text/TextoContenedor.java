@@ -1,5 +1,7 @@
 package text;
 
-public class TextoContenedor {
+public abstract class TextoContenedor extends Componente{
+	
+	public abstract void removeChar();
 
 }

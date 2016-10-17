@@ -8,14 +8,12 @@ public class GetTotalOrder extends OrderOperations{
 
 	@Override
 	public String name() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Total";
 	}
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Total:"+this.calculator.getTotal());
 	}
 
 }

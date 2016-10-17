@@ -13,11 +13,15 @@ public class MainCalculator {
     }
 
     public void execute() {
-        String key = (String) IO.getIO().select(this.commandManager.keys());
-        this.commandManager.execute(key);
+    	String keys[] = this.commandManager.keys();
+    	for(int i=0;i<keys.length;i++)
+    	{
+    		this.commandManager.execute(keys[i]);
+    	}
     }
 
     public static void main(String[] args) {
-        IO.getIO().addView(new MainCalculator());
+    	MainCalculator mc= new MainCalculator();
+    	mc.execute();
     }
 }
