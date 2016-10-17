@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class AddOrder extends OrderOperations{
 	
-	private Scanner sc;
-	
 	private int valor;
+	
+	private Scanner sc;
 
 	public AddOrder(Calculator calculator) {
 		super(calculator);

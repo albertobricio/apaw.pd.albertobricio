@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class SubstractOrder extends OrderOperations{
 
 	private Scanner sc;
+	
+	private int valor;
 
 	public SubstractOrder(Calculator calculator) {
 		super(calculator);
@@ -25,7 +27,7 @@ public class SubstractOrder extends OrderOperations{
 	{
 			sc = new Scanner(System.in);
 			System.out.println("Ingrese el valor para la resta:");
-			int valor = sc.nextInt();
+			this.valor = sc.nextInt();
 			return valor;
 	}
 
