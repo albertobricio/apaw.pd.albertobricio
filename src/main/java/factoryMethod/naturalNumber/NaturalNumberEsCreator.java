@@ -1,6 +1,6 @@
 package factoryMethod.naturalNumber;
 
-public class NaturalNumberEsCreator extends NaturalNumberCreator{
+public class NaturalNumberEsCreator extends NaturalNumberCreator {
 
 	@Override
 	public NaturalNumber createNaturalNumber() {

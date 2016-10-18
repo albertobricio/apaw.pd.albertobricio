@@ -1,23 +1,20 @@
 package factoryMethod.naturalNumber;
 
 public class NaturalNumberManager {
-	
+
 	private NaturalNumber naturalNumber;
-	
+
 	private NaturalNumberCreator naturalNumberCreator;
-	
-	public void setCreator(NaturalNumberCreator naturalNumberCreator)
-	{
-		this.naturalNumberCreator=naturalNumberCreator;
+
+	public void setCreator(NaturalNumberCreator naturalNumberCreator) {
+		this.naturalNumberCreator = naturalNumberCreator;
 	}
-	
-	public void createNaturalNumber()
-	{
-		this.naturalNumber=this.naturalNumberCreator.createNaturalNumber();
+
+	public void createNaturalNumber() {
+		this.naturalNumber = this.naturalNumberCreator.createNaturalNumber();
 	}
-	
-	public NaturalNumber getNaturalNumber()
-	{
+
+	public NaturalNumber getNaturalNumber() {
 		return naturalNumber;
 	}
 

@@ -1,47 +1,35 @@
 package text;
 
-public class Parrafo extends TextoContenedor{
-	
-	private java.util.List<Componente> list;
-	
-	public Parrafo()
-	{
-		this.list = new java.util.ArrayList<Componente>();
+public class Parrafo extends TextoContenedor {
+
+	public Parrafo() {
+		super();
 	}
 
 	@Override
 	public void add(Componente componente) {
-		if(componente.getClass().getName()=="Parrafo" ||
-				componente.getClass().getName()=="Texto")
-		{
+		if (componente.getClass().getName() == "Parrafo" || componente.getClass().getName() == "Texto") {
 			throw new UnsupportedOperationException();
-		}
-		else
-		{
+		} else {
 			list.add(componente);
 		}
 	}
 
 	@Override
 	public String dibujar(boolean confirm) {
-		if (confirm==false){
-			for(Componente item : list)
-			{
-				
-			}
-			else
-			{
-				return Character.toString(getCaracterMayus());
-			}		
+		String parrafo = "";
+		for (Componente item : this.list) {
+			parrafo += item.dibujar(confirm);
 		}
+		parrafo += "\n";
+		return parrafo;
 	}
 
 	@Override
-	public void removeChar() {
-		list.remove(list.size()-1);
+	public void removeChar(Componente componente) {
+		if(componente.getClass().getName()=="Caracter"){
+			this.list.remove(this.list.size()-1);
+		}
 	}
-
-
-
 
 }

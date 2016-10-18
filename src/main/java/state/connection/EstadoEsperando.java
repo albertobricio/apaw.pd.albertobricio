@@ -1,6 +1,6 @@
 package state.connection;
 
-public class EstadoEsperando extends State{
+public class EstadoEsperando extends State {
 
 	@Override
 	public void abrir(Conexion conexion) {
@@ -11,7 +11,7 @@ public class EstadoEsperando extends State{
 	}
 
 	@Override
-	public void parar(Conexion conexion){
+	public void parar(Conexion conexion) {
 	}
 
 	@Override
@@ -24,19 +24,15 @@ public class EstadoEsperando extends State{
 
 	@Override
 	public void recibir(int respuesta, Conexion conexion) {
-		
-		if(respuesta>0)
-		{
+
+		if (respuesta > 0) {
 			conexion.setState(new EstadoCerrado());
-		}
-		else if(respuesta==0)
-		{
+		} else if (respuesta == 0) {
 			conexion.setState(new EstadoPreparado());
 		}
 	}
 
-	public Estado getEstado()
-	{
+	public Estado getEstado() {
 		return Estado.ESPERANDO;
 	}
 

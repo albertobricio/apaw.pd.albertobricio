@@ -1,6 +1,6 @@
 package state.connection;
 
-public class EstadoParado extends State{
+public class EstadoParado extends State {
 
 	@Override
 	public void abrir(Conexion conexion) {
@@ -21,15 +21,14 @@ public class EstadoParado extends State{
 	}
 
 	@Override
-	public void enviar(String msg, Conexion conexion) {	
+	public void enviar(String msg, Conexion conexion) {
 	}
 
 	@Override
 	public void recibir(int respuesta, Conexion conexion) {
 	}
 
-	public Estado getEstado()
-	{
+	public Estado getEstado() {
 		return Estado.PARADO;
 	}
 

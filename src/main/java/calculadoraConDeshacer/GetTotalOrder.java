@@ -1,6 +1,6 @@
 package calculadoraConDeshacer;
 
-public class GetTotalOrder extends OrderOperations{
+public class GetTotalOrder extends OrderOperations {
 
 	public GetTotalOrder(Calculator calculator) {
 		super(calculator);
@@ -13,7 +13,7 @@ public class GetTotalOrder extends OrderOperations{
 
 	@Override
 	public void execute() {
-		System.out.println("Total:"+this.calculator.getTotal());
+		System.out.println("Total:" + this.calculator.getTotal());
 	}
 
 }

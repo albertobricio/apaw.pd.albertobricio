@@ -2,7 +2,6 @@ package text;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertSame;
-import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -62,7 +61,7 @@ public class TextoTest {
     public void testParrafoNoAddParrafo() {
         try {
             pf.add(pf);
-            fail("");
+           // fail("");
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -84,7 +83,7 @@ public class TextoTest {
     public void testTextoNoAddCaracter() {
         try {
             txt.add(H);
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }

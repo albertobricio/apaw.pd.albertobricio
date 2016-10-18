@@ -8,9 +8,9 @@ public class VisitorMain {
 	private Collection<Figure> coleccion = new ArrayList<Figure>();
 
 	public VisitorMain() {
-		coleccion.add(new Circle("Circulo",1));
-		coleccion.add(new Square("Cuadrado",1));
-		coleccion.add(new Triangle("Triangulo",1, 1));
+		coleccion.add(new Circle("Circulo", 1));
+		coleccion.add(new Square("Cuadrado", 1));
+		coleccion.add(new Triangle("Triangulo", 1, 1));
 	}
 
 	public void visitador1() {

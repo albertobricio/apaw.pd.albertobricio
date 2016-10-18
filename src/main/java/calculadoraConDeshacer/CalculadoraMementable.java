@@ -1,5 +1,8 @@
 package calculadoraConDeshacer;
 
-public class CalculadoraMementable {
+public interface CalculadoraMementable<T> {
+	T createMemento();
+
+	void restoreMemento(T memento);
 
 }

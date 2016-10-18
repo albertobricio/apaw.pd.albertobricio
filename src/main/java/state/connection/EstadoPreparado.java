@@ -1,6 +1,6 @@
 package state.connection;
 
-public class EstadoPreparado extends State{
+public class EstadoPreparado extends State {
 
 	@Override
 	public void abrir(Conexion conexion) {
@@ -28,11 +28,10 @@ public class EstadoPreparado extends State{
 	}
 
 	@Override
-	public void recibir(int respuesta, Conexion conexion) {	
+	public void recibir(int respuesta, Conexion conexion) {
 	}
 
-	public Estado getEstado()
-	{
+	public Estado getEstado() {
 		return Estado.PREPARADO;
 	}
 

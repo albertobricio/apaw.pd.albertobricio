@@ -1,7 +1,7 @@
 package calculadoraConDeshacer;
 
-public class ResetOrder extends OrderOperations{
-	
+public class ResetOrder extends OrderOperations {
+
 	public ResetOrder(Calculator calculator) {
 		super(calculator);
 	}
@@ -16,6 +16,5 @@ public class ResetOrder extends OrderOperations{
 		this.calculator.reset();
 		System.out.println("Reset done.");
 	}
-
 
 }

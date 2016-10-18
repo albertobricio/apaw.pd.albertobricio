@@ -2,10 +2,10 @@ package calculadoraConDeshacer;
 
 import java.util.Scanner;
 
-public class AddOrder extends OrderOperations{
-	
+public class AddOrder extends OrderOperations {
+
 	private Scanner sc;
-	
+
 	private int valor;
 
 	public AddOrder(Calculator calculator) {
@@ -22,9 +22,8 @@ public class AddOrder extends OrderOperations{
 		this.calculator.add(this.getValor());
 		System.out.println("Suma realizada");
 	}
-	
-	public int getValor()
-	{
+
+	public int getValor() {
 		sc = new Scanner(System.in);
 		System.out.println("Ingrese el valor para la suma:");
 		this.valor = sc.nextInt();

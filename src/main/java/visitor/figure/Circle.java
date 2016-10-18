@@ -2,17 +2,16 @@ package visitor.figure;
 
 public class Circle extends Figure {
 
-    private double radius;
+	private double radius;
 
-    public Circle(String description, double radius) {
-        super(description);
-        this.radius = radius;
-    }
+	public Circle(String description, double radius) {
+		super(description);
+		this.radius = radius;
+	}
 
-    public double getRadius()
-    {
-	    return this.radius;
-    }
+	public double getRadius() {
+		return this.radius;
+	}
 
 	@Override
 	public void accept(Visitor v) {
