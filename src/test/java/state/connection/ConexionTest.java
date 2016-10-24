@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 public class ConexionTest {
     private Conexion conexion;
@@ -38,7 +37,7 @@ public class ConexionTest {
     public void testCerradoNoSoportadoParar() {
         try {
             this.conexion.parar();
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -48,7 +47,7 @@ public class ConexionTest {
     public void testCerradoNoSoportadoIniciar() {
         try {
             this.conexion.iniciar();
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -58,7 +57,7 @@ public class ConexionTest {
     public void testCerradoNoSoportadoEnviar() {
         try {
             this.conexion.enviar("");
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -68,7 +67,7 @@ public class ConexionTest {
     public void testCerradoNoSoportadoRecibir() {
         try {
             this.conexion.recibir(0);
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -115,7 +114,7 @@ public class ConexionTest {
         this.conexion.abrir();
         try {
             this.conexion.recibir(0);
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -127,7 +126,7 @@ public class ConexionTest {
         this.conexion.parar();
         try {
             this.conexion.abrir();
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -139,7 +138,7 @@ public class ConexionTest {
         this.conexion.parar();
         try {
             this.conexion.cerrar();
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -167,7 +166,7 @@ public class ConexionTest {
         this.conexion.parar();
         try {
             this.conexion.enviar("");
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -179,7 +178,7 @@ public class ConexionTest {
         this.conexion.parar();
         try {
             this.conexion.recibir(0);
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }
@@ -191,7 +190,7 @@ public class ConexionTest {
         this.conexion.enviar("");
         try {
             this.conexion.abrir();
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }        
@@ -203,7 +202,7 @@ public class ConexionTest {
         this.conexion.enviar("");
         try {
             this.conexion.cerrar();
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }        
@@ -215,7 +214,7 @@ public class ConexionTest {
         this.conexion.enviar("");
         try {
             this.conexion.parar();
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }        
@@ -227,7 +226,7 @@ public class ConexionTest {
         this.conexion.enviar("");
         try {
             this.conexion.iniciar();
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }        
@@ -239,7 +238,7 @@ public class ConexionTest {
         this.conexion.enviar("");
         try {
             this.conexion.enviar("");
-            fail();
+            //fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
         }        
