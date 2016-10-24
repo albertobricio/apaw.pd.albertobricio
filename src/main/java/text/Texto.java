@@ -27,11 +27,9 @@ public class Texto extends TextoContenedor {
 
 	@Override
 	public void removeChar(Componente componente) {
-		if(componente.getClass().getName()=="Texto" ||
-				componente.getClass().getName()=="Parrafo"){
-			this.list.remove(this.list.size()-1);
-		}	
+		if (componente.getClass().getName() == "Texto" || componente.getClass().getName() == "Parrafo") {
+			this.list.remove(this.list.size() - 1);
+		}
 	}
-
 
 }

@@ -1,14 +1,14 @@
 package calculadoraConDeshacer;
 
 public class ComandoGuardar extends OrderOperations {
-	
+
 	private Originador originador;
 	private GestorMementos<MementoCalculadora> gestor;
 
 	public ComandoGuardar(Calculator calculator, GestorMementos<MementoCalculadora> gestor) {
 		super(calculator);
-		this.originador=new Originador();
-		this.gestor=gestor;
+		this.originador = new Originador();
+		this.gestor = gestor;
 	}
 
 	@Override

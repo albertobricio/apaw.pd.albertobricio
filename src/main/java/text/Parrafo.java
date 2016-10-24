@@ -27,8 +27,8 @@ public class Parrafo extends TextoContenedor {
 
 	@Override
 	public void removeChar(Componente componente) {
-		if(componente.getClass().getName()=="Caracter"){
-			this.list.remove(this.list.size()-1);
+		if (componente.getClass().getName() == "Caracter") {
+			this.list.remove(this.list.size() - 1);
 		}
 	}
 
